@@ -5,16 +5,16 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 type Item = {
-  title: string;
-  description: string;
-  image?: string;
-  id?: number;
+  title: String;
+  description: String;
+  image?: String;
+  id?: Number;
 };
 
 export default function Home() {
   const [data, setData] = useState<Item[] | null>(null);
   const [loading, setLoading] = useState<any>('true');
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<String | null>(null);
 
   useEffect(() => {
     let cancelled = false;
