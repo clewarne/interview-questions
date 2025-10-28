@@ -93,7 +93,7 @@ export default function Home() {
             )}
                 <div>
               <h2 style={{ margin: '0 0 .5rem 0' }}>{item.title}</h2>
-              <p style={{ margin: 0 }}>{item.description}</p>
+              <p style={{ margin: 0 }}>{item['Descriptions']}</p>
             </div>
           </li>
         ))}</ul>
